@@ -38,7 +38,7 @@ app.post("/", function(req,res){
 
   const options = {
     method: "POST",
-    auth: "ChandraPrakash:7e1d85402bfe1f0d0d78461bd8de2831-us13"
+    auth: "ChandraPrakash:process.env.API_TOKEN"
   }
 
   const request = https.request(url, options, function(respons){
@@ -70,5 +70,5 @@ app.listen(process.env.PORT || 3000, (req,res) => {
 });
 
 
-// 7e1d85402bfe1f0d0d78461bd8de2831-us13
+
 // cd5671450b
